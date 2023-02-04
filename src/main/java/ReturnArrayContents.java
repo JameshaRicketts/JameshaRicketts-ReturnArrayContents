@@ -30,7 +30,11 @@ public class ReturnArrayContents {
     public String arrayToString(int[] nums){
         String string = "";
         for (int i=0; i<nums.length; i++) {
-            string += " " + nums[i];
+            if (i == 0) {
+                string += nums[i];
+            } else {
+                string += " " + nums[i];
+            }
         }
         return string;
     }
